@@ -112,3 +112,12 @@ Route::get('/keranjangbelanja','App\Http\Controllers\KeranjangController@keranja
 Route::get('/keranjangbelanja/tambah','App\Http\Controllers\KeranjangController@tambah');
 Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangController@store');
 Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\KeranjangController@hapus');
+
+Route::get('/obat','App\Http\Controllers\ObatController@index');
+Route::get('/obat/tambah4','App\Http\Controllers\ObatController@tambah');
+Route::post('/obat/store','App\Http\Controllers\ObatController@store');
+Route::get('/obat/edit2/{kodeobat}','App\Http\Controllers\ObatController@edit');
+Route::post('/obat/update','App\Http\Controllers\ObatController@update');
+Route::get('/obat/hapus/{id}','App\Http\Controllers\ObatController@hapus');
+Route::get('/obat/cari','App\Http\Controllers\ObatController@cari');
+Route::get('/obat/view2/{id}','App\Http\Controllers\ObatController@view');
