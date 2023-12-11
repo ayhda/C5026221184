@@ -128,3 +128,8 @@ Route::get('/karyawan','App\Http\Controllers\KaryawanController@index');
 Route::get('/karyawan/tambah5','App\Http\Controllers\KaryawanController@tambah');
 Route::post('/karyawan/store','App\Http\Controllers\KaryawanController@store');
 Route::get('/karyawan/hapus/{id}','App\Http\Controllers\KaryawanController@hapus');
+
+Route::get('/karyawan','App\Http\Controllers\KaryawanEASController@index');
+Route::get('/karyawan/tambah5','App\Http\Controllers\KaryawanEASController@tambah');
+Route::post('/karyawan/store','App\Http\Controllers\KaryawanEASController@store');
+Route::get('/karyawan/hapus/{id}','App\Http\Controllers\KaryawanEASController@hapus');

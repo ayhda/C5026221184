@@ -3,7 +3,6 @@
 
 @section('konten')
 
-	<h2>www.malasngoding.com</h2>
 	<h3>Data Karyawan</h3>
 
 	<br/>
@@ -23,23 +22,23 @@
 			<th>Nama Lengkap</th>
 			<th>Divisi</th>
 			<th>Departemen</th>
-            <th>Action</th>
+            <th>Opsi</th>
 		</tr>
 		@foreach($karyawan as $p)
 		<tr>
             <td>{{ $p->kodepegawai }}</td>
 			<td>{{ strtoupper($p->namalengkap) }}</td>
-			<td>{{ strtolower($p->divisi) }}</td>
-			<td>{{ $p->departemen }}</td>
+			<td>{{ $p->divisi }}</td>
+			<td>{{ strtolower($p->departemen) }}</td>
 			<td>
-				<a href="/karyawan/hapus/{{ $p->kodepegawai }}" class="btn btn-danger">Hapus</a>
+				<a href="/karyawan/hapus/{{ $p->kodepegawai }}" class="btn btn-danger">Hapus Data</a>
 			</td>
 		</tr>
 		@endforeach
 	</table>
 
     {{-- {{$obat->links()}} --}}
-    <a href="/karyawan/tambah5" class="btn btn-success"> + Tambah Karyawan Baru</a>
+    <a href="/karyawan/tambah5" class="btn btn-success"> Tambah Data</a>
 
 
     @endsection
