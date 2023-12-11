@@ -121,3 +121,10 @@ Route::post('/obat/update','App\Http\Controllers\ObatController@update');
 Route::get('/obat/hapus/{id}','App\Http\Controllers\ObatController@hapus');
 Route::get('/obat/cari','App\Http\Controllers\ObatController@cari');
 Route::get('/obat/view2/{id}','App\Http\Controllers\ObatController@view');
+
+Route::get('/counter', 'App\Http\Controllers\CounterController@index');
+
+Route::get('/karyawan','App\Http\Controllers\KaryawanController@index');
+Route::get('/karyawan/tambah5','App\Http\Controllers\KaryawanController@tambah');
+Route::post('/karyawan/store','App\Http\Controllers\KaryawanController@store');
+Route::get('/karyawan/hapus/{id}','App\Http\Controllers\KaryawanController@hapus');
